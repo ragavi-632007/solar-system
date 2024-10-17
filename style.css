@@ -1,0 +1,200 @@
+body{
+    margin:0;
+    padding:0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  main{
+    display: block;
+    background-color: #FFF;
+  }
+  
+  section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100% );
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  section.module p{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  section.module h2{
+    font-weight: 2000;
+    text-align: center;
+  }
+  
+  section.module:last-child{
+    margin-bottom: 0;
+  }
+  
+  section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #FFF;
+  }
+  
+  section.module.content{
+   padding: 40px 0;
+   background: rgba(27, 65, 201, 0.8); 
+  }
+  
+  
+  
+  section.module.parallax-1{
+    background-image: url("./imgs/solarsystem.jpg");
+  }
+  
+  section.module.parallax-2{
+    background-image: url("./imgs/sun.jpg");
+  }
+  
+  section.module.parallax-3{
+    background-image: url("./imgs/mercury.jpg");
+  }
+  
+  section.module.parallax-4{
+    background-image: url("./imgs/venus.jpg");
+  }
+  
+  section.module.parallax-5{
+    background-image: url("./imgs/earth.jpg");
+  }
+  
+  section.module.parallax-6{
+    background-image: url("./imgs/moon.jpg");
+  }
+  
+  section.module.parallax-7{
+    background-image: url("./imgs/mars.jpg");
+  }
+  
+  section.module.parallax-8{
+    background-image: url("./imgs/jupiter.jpg");
+  }
+  
+  section.module.parallax-9{
+    background-image: url("./imgs/saturn.jpg");
+  }
+  
+  section.module.parallax-10{
+    background-image: url("./imgs/uranus.jpg");
+  }
+  
+  section.module.parallax-11{
+    background-image: url("./imgs/neptune.jpg");
+  }
+  
+  
+  section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+  
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  header a{
+  color: #FFF;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  }
+  
+  header a:hover{
+    cursor: pointer;
+  }
+  
+  header a::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  header a:hover::after{
+    transform: scaleX(1);
+  }
+  
+  header a:first-child{
+    margin-left: 30px;
+  }
+  
+  header a:last-child{
+    margin-right: 30px;
+  }
+  
+  
+  .button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
